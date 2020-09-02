@@ -2,7 +2,7 @@
 // visit https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md
 export const msalConfig = {
     auth: {
-        clientId: "Enter the Client Id (aka 'Application ID')",
+        clientId: "9eaf8246-7323-4cdb-b2d4-dfaf2c5d5e8d",
         authority: "https://login.microsoftonline.com/consumers",
         redirectUri: "http://localhost:3000"
     },
@@ -15,7 +15,7 @@ export const msalConfig = {
 // Coordinates and required scopes for your web api
 export const apiConfig = {
     resourceUri: "https://localhost:44351/api/profile",
-    resourceScope: "Enter the API scopes as declared in the app registration 'Expose an Api' blade in the form of 'api://{client_id}/.default'"
+    resourceScope: "api://09d29e5e-c86f-4652-beeb-39ee66b84b4e/.default"
 }
 
 /** 
