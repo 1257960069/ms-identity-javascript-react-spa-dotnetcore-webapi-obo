@@ -6,10 +6,13 @@ import {
 import { apiConfig } from '../utils/authConfig';
 
 export const getProfile = (id) => (dispatch, getState) => {
+    var accessToken=getState().auth.accessToken;
+    debugger;
+    console.log(accessToken);
     return fetch(apiConfig.resourceUri + '/' + id, {
         method: 'GET',
         headers: {
-            "Authorization": `Bearer ${getState().auth.accessToken}`,
+            "Authorization": `Bearer ${accessToken}`,
             "Content-Type": 'application/json'
         }
     }).then(response => {
